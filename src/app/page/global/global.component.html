@@ -1,0 +1,6 @@
+<app-nav [nav]="cytoData.nav"></app-nav>
+<app-posters [posters]="cytoData.posters"></app-posters>
+<app-purchase
+  [purchase]="cytoData.purchase"
+  (emitMessage)="setMessage($event)"
+></app-purchase>

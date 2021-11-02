@@ -1,0 +1,148 @@
+<div class="btn__container">
+  <button
+    (click)="showHide()"
+    [ngClass]="{ hidePrice: showPrice === true }"
+    class="posters__button"
+  >
+    {{ posters.postersBaseOne.button }}
+  </button>
+  <button (click)="hideShow()" [ngClass]="{ hidePrice: showPrice === false }">
+    Hide prices
+  </button>
+</div>
+<div class="posters__container">
+  <div *ngFor="let img of posters.postersBaseOne.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseOne.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseOne.price }}
+    </p>
+  </div>
+
+  <div *ngFor="let img of posters.postersBaseTwo.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseTwo.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseTwo.price }}
+    </p>
+  </div>
+
+  <div *ngFor="let img of posters.postersBaseThree.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseThree.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseThree.price }}
+    </p>
+  </div>
+  <div *ngFor="let img of posters.postersBaseFour.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseFour.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseFour.price }}
+    </p>
+  </div>
+  <div *ngFor="let img of posters.postersBaseFive.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseFive.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseFive.price }}
+    </p>
+  </div>
+  <div *ngFor="let img of posters.postersBaseSix.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseSix.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseSix.price }}
+    </p>
+  </div>
+  <div *ngFor="let img of posters.postersBaseSeven.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseSeven.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseSeven.price }}
+    </p>
+  </div>
+  <div *ngFor="let img of posters.postersBaseEight.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseEight.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseEight.price }}
+    </p>
+  </div>
+  <div *ngFor="let img of posters.postersBaseNine.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseNine.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseNine.price }}
+    </p>
+  </div>
+  <div *ngFor="let img of posters.postersBaseTen.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseTen.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseTen.price }}
+    </p>
+  </div>
+  <div *ngFor="let img of posters.postersBaseEleven.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseEleven.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseEleven.price }}
+    </p>
+  </div>
+  <div *ngFor="let img of posters.postersBaseTwelve.img" class="posters">
+    <img class="posters__img" src="{{ img.src }}" alt="{{ img.alt }}" />
+    <p class="posters__title">{{ posters.postersBaseTwelve.title }}</p>
+    <p
+      *ngIf="showPrice === true"
+      [ngClass]="{ showPrice: showPrice === true }"
+      class="posters__price"
+    >
+      {{ posters.postersBaseTwelve.price }}
+    </p>
+  </div>
+</div>

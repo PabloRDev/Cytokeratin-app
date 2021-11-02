@@ -1,0 +1,79 @@
+.purchase__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../../../../assets/Formulario.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+.purchase__title {
+  font-size: 3rem;
+  color: grey;
+  background-color: white;
+  text-align: center;
+  padding: 60px;
+  margin: 120px 0;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+  position: relative;
+}
+form {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+input {
+  font-size: 1.5rem;
+  background-color: #f4f6f7;
+  color: #000;
+  width: 40%;
+  height: 70px;
+  padding: 3px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  &:focus {
+    background-color: #dadada;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  input,
+  button {
+    width: 80%;
+  }
+}
+
+button {
+  cursor: pointer;
+  width: 40%;
+  height: auto;
+  margin: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(43, 79, 179);
+  color: #f4f6f7;
+  font-size: 1.3rem;
+  font-weight: bold;
+  &:hover {
+    background-color: rgb(33, 61, 139);
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  a {
+    color: purple;
+  }
+}

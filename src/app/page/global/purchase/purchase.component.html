@@ -1,0 +1,46 @@
+<p class="purchase__title">{{ purchase.title }}</p>
+<div class="purchase__container">
+  <form class="purchase__form" action="get">
+    <input
+      class="purchase__form__input"
+      [(ngModel)]="data"
+      (keyup)="sendMessage()"
+      type="text"
+      placeholder="Poster you want..."
+      required
+    />
+    <input
+      class="purchase__form__input"
+      [(ngModel)]="data"
+      (keyup)="sendMessage()"
+      type="text"
+      placeholder="Name..."
+    />
+    <input
+      class="purchase__form__input"
+      [(ngModel)]="data"
+      (keyup)="sendMessage()"
+      type="email"
+      placeholder="Email..."
+      required
+    />
+    <input
+      class="purchase__form__input"
+      [(ngModel)]="data"
+      (keyup)="sendMessage()"
+      type="text"
+      placeholder="Address..."
+      required
+    />
+    <button class="purchase__form__btn" type="submit" (click)="showAlert()">
+      {{ purchase.button }}
+    </button>
+  </form>
+</div>
+
+<footer>
+  <p>
+    &copy; Copyright 2021, by
+    <a href="https://github.com/pablordev" target="_blank">PabloRDev</a>
+  </p>
+</footer>
